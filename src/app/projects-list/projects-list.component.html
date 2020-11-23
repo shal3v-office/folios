@@ -1,0 +1,16 @@
+<div class="container projectslist">
+    <button class="btn btn-primary" (click)="addProject()">Add Project</button>
+    <div class="card-columns"> 
+        <div *ngFor="let project of projectsList;" class="card" style="width: 18rem;">
+            <img class="card-img-top" src="project.file_url" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{project.title}}</h5>
+                <p class="card-text">{{project.desc}}</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">follows</a>
+                <a href="#" class="card-link">likes</a>
+            </div>
+        </div>
+    </div>
+</div>
